@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: url("./assets/images/backgroundImg.png");
+  font-family: "Proxima Nova Rg";
+  background-size: 100% 100%;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("./assets/fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

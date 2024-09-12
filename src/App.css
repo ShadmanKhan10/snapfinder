@@ -1,0 +1,596 @@
+.work-space-container {
+  margin: auto;
+  width: calc((100vh * 9) / 16);
+  position: relative;
+  background: #a0a0a021;
+  border: 0.1vw solid #bcbcbc;
+  box-sizing: border-box;
+  max-height: 100vh;
+  overflow-y: auto;
+  background-image: url("./assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work-space-container .logo-contianer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 0vw;
+  box-sizing: border-box;
+  margin-bottom: 1vw;
+  align-items: center;
+}
+
+.work-space-container .logo-contianer img {
+  width: 40%;
+}
+
+.work-space-container .top-container {
+  width: 80%;
+  margin: auto;
+}
+
+.work-space-container .top-container .steps-title {
+  font-size: 100%;
+  color: #575757;
+}
+
+.work-space-container .top-container .progress-bar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-space-container .top-container .progress-bar-container .progress.active {
+  width: 30%;
+  height: 0.3vw;
+  background: #007cb0;
+  border-radius: 1vw;
+  margin-top: 3%;
+}
+
+.work-space-container
+  .top-container
+  .progress-bar-container
+  .progress.inactive {
+  width: 30%;
+  height: 0.3vw;
+  background: #bcbcbc;
+  border-radius: 1vw;
+  margin-top: 3%;
+}
+
+.work-space-container .white-box {
+  height: 75%;
+  background: #ffffff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+}
+
+.work-space-container .white-box .camera-icon {
+  width: 40%;
+  margin: auto;
+}
+
+.camera-icon-contianer {
+  text-align: center;
+}
+
+.camera-icon-contianer img {
+  width: 50%;
+  margin-top: 20%;
+}
+
+.instrunction-contianer {
+  color: #75787b;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  font-size: 100%;
+  line-height: 140%;
+}
+
+.camera-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.camera-container .camera-box {
+  width: 42vh;
+  margin-top: 10%;
+  height: calc(42vh / 0.75);
+  object-fit: cover;
+}
+
+.camera-container video {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: 0.2vw solid #fff;
+}
+
+.camera-container .preview-img {
+  width: 42vh;
+  margin-top: 10%;
+  height: calc(42vh / 0.75);
+  object-fit: cover;
+  border: 0.2vw solid #fff;
+  margin-top: 10%;
+  position: relative;
+}
+.camera-container .preview-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.animationBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.camera-container .capture-button {
+  background: none;
+  border: none;
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.camera-container .capture-button img {
+  width: 20vw;
+}
+
+.camera-container .rotate-button {
+  background: none;
+  border: none;
+  position: absolute;
+  bottom: 8%;
+  right: 10%;
+  cursor: pointer;
+  width: 15%;
+}
+
+.camera-container .rotate-button img {
+  width: 14vw;
+}
+
+.action-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 7%;
+}
+
+.action-btn-container .retake-btn {
+  background-color: #75787b;
+  border: none;
+  border-radius: 2vw;
+  padding: 2.5% 2%;
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+}
+
+.action-btn-container .retake-btn img {
+  width: 15%;
+  margin-right: 3%;
+}
+
+.action-btn-container .search-btn {
+  background-color: #007cb0;
+  border: none;
+  border-radius: 2vw;
+  padding: 2.5% 2%;
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+}
+
+.action-btn-container .search-btn img {
+  width: 10%;
+  margin-right: 3%;
+}
+
+.please-wait {
+  text-align: center;
+  color: #75787b;
+  font-size: 110%;
+
+  margin-top: 7%;
+}
+
+.image-grid-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3% auto;
+  width: 95%;
+  padding-bottom: 6%;
+  overflow-y: auto;
+  max-height: 74vh;
+}
+
+.image-grid-container .image-box {
+  width: 50%;
+  height: 8vw;
+  padding: 1%;
+  box-sizing: border-box;
+  margin-bottom: 2%;
+  position: relative;
+}
+
+.image-grid-container .image-box .thumbnail {
+  width: 100%;
+  min-height: 8vw;
+  height: 8vw;
+  object-fit: cover;
+  object-position: top;
+}
+
+.download-footer {
+  height: 8%;
+  background: transparent;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4%;
+}
+
+.download-footer button {
+  background-color: #03ffd3;
+  border: none;
+  border-radius: 7px;
+  padding: 2% 5%;
+  color: #083e34;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 100%;
+  width: 100%;
+}
+
+.progress-bar-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.progress-bar-background .process {
+  color: #ffffff;
+  font-size: 100%;
+}
+
+.progress-bar-background .process-count {
+  color: #ffffff;
+  font-size: 150%;
+  font-weight: 700;
+  margin-top: 10%;
+}
+
+.tick-mark {
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  width: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.tick-mark img {
+  width: 100%;
+  display: block;
+}
+
+.homeContentContainer {
+  position: absolute;
+  top: 33vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  mix-blend-mode: normal;
+  width: 100%;
+}
+
+.prodLogo img {
+  width: 65%;
+}
+
+.homeContentContainer .btnContainer {
+  margin-top: 5vh;
+}
+
+.homeContentContainer .btnContainer img {
+  width: 35%;
+  cursor: pointer;
+}
+
+/* .footerContainer {
+  border: 2px solid black;
+} */
+
+.homeSocialMediaContainer {
+  position: absolute;
+  bottom: 2vh;
+  width: 100%;
+}
+
+.followUsText {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.5vh;
+  font-style: italic;
+  font-size: 4vw;
+}
+
+.footerLogoContianer {
+  /* border: 2px solid black; */
+  width: 100vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+}
+
+.footerLogo {
+  /* border: 2px solid black; */
+  height: 100%;
+  width: 50%;
+  object-fit: contain;
+}
+.socialMediaBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.socialMediaBox img {
+  width: 8%;
+  margin-right: 4%;
+  cursor: pointer;
+}
+.socialMediaBox img:last-child {
+  margin-right: 0%;
+}
+
+.homeIconContainer {
+  margin-top: 2vh;
+  text-align: right;
+  padding-right: 6%;
+}
+
+.homeIconContainer img {
+  width: 26%;
+  cursor: pointer;
+}
+
+.homeIconContainerFinal {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+
+.homeIconContainerFinal img {
+  width: 26%;
+  cursor: pointer;
+}
+
+.selfieInstruction {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  /* font-size: 2.4vh; */
+  font-size: 5vw;
+  margin-top: 5%;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.popupInnerBox {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+
+.popupInnerBox .imageContainer {
+  width: 70vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupInnerBox .imageContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sliderControl {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.sliderControl svg {
+  width: 2vw;
+  height: 2vw;
+}
+
+.download-single {
+  position: relative;
+  margin-top: 5vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 100%;
+  z-index: 2;
+}
+
+.download-single button {
+  background-color: #03ffd3;
+  border: none;
+  border-radius: 7px;
+  color: #083e34;
+  font-weight: 500;
+  padding: 1vh 5%;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  color: #fff;
+}
+
+.closeBtn svg {
+  width: 33px;
+  height: 33px;
+}
+
+@media (orientation: portrait) {
+  .work-space-container .logo-contianer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw 0;
+    box-sizing: border-box;
+    margin-bottom: 7vw;
+    align-items: center;
+  }
+  .work-space-container {
+    width: 100vw;
+    border: none;
+  }
+
+  .work-space-container .logo-contianer img {
+    width: 40%;
+  }
+
+  .work-space-container
+    .top-container
+    .progress-bar-container
+    .progress.active {
+    height: 1vw;
+    border-radius: 1vw;
+  }
+
+  .work-space-container
+    .top-container
+    .progress-bar-container
+    .progress.inactive {
+    height: 1vw;
+    border-radius: 1vw;
+  }
+
+  .work-space-container .white-box {
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+  }
+
+  .camera-container .camera-box {
+    width: 38vh;
+    margin-top: 10%;
+    height: calc(38vh / 0.75);
+    object-fit: cover;
+  }
+
+  .camera-container video {
+    border: 1vw solid #fff;
+  }
+
+  .camera-container .preview-img {
+    width: 38vh;
+    margin-top: 10%;
+    height: calc(38vh / 0.75);
+    object-fit: cover;
+    border: 1vw solid #fff;
+  }
+
+  .action-btn-container .retake-btn {
+    border-radius: 10vw;
+    font-size: 80%;
+  }
+
+  .action-btn-container .search-btn {
+    border-radius: 10vw;
+    font-size: 80%;
+  }
+
+  .please-wait {
+    font-size: 120%;
+  }
+
+  .image-grid-container .image-box {
+    height: 25vw;
+    padding: 2%;
+    margin-bottom: 4%;
+  }
+
+  .image-grid-container .image-box .thumbnail {
+    min-height: 25vw;
+    height: 25vw;
+  }
+
+  .download-footer {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: none;
+  }
+  .sliderControl svg {
+    width: 6vw;
+    height: 6vw;
+  }
+}
